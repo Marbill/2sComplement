@@ -5,7 +5,7 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static int GetIntBinaryString(int n)
+        static int numberOfOnes(int n)
         {
             char[] b = new char[32];
             int pos = 31;
@@ -43,7 +43,7 @@ namespace ConsoleApp1
             int total = 0;
             for (int i = x; i <= y; i++)
             {
-                total += GetIntBinaryString(i);
+                total += numberOfOnes(i);
             }
 
             return total;
